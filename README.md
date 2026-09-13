@@ -1,51 +1,47 @@
-#CryoGuard 
-Predictive Medical Cold-Chain Intelligence
+# CryoGuard
+
+## Predictive Medical Cold-Chain Intelligence
 Predicting cold-chain risks before they become medical cargo failures.
-CryoGuard is a Streamlit-based monitoring dashboard for temperature-sensitive medical cargo such as blood, organs, and vaccines.
-It monitors simulated:
--  Temperature
--  Humidity
--  Shock / jolts
--  Battery
--  Transit time
-The system uses multiple sensor readings, voting logic, stress tracking, and predictive analysis to determine whether the cargo is SAFE, WARNING, or CRITICAL.
+CryoGuard is a monitoring dashboard designed for temperature-sensitive medical cargo such as blood, organs, and vaccines during transportation.
 
-##Features:
-- Fail-safe multi-sensor voting mechanism
-- Sensor outlier detection
-- SAFE / WARNING / CRITICAL status
-- Predictive confidence
-- Estimated safe hours
-- Route viability prediction
-- Critical condition lock
-- Event logs and trends
-- PDF compliance report
+## Features
 
-##Tech Stack
-- Python
-- Streamlit
-- Pandas
-- ReportLab
-- Wokwi
+* Fail-safe multi-sensor voting
+* Temperature monitoring
+* Humidity monitoring
+* Shock and jolt detection
+* Battery monitoring
+* SAFE / WARNING / CRITICAL status
+* Predictive risk analysis
+* Estimated remaining safe hours
+* Route viability prediction
+* Critical condition lock
+* Event logs and trends
+* PDF compliance report
 
-Run Locally
+## Tech Stack
+* Python
+* Streamlit
+* Pandas
+* ReportLab
+* Wokwi
+
+## Project Structure
+CryoGuard/
+* app.py
+* requirements.txt
+* logic/
+  * thresholds.py
+  * voting.py
+  * state_engine.py
+  * prediction.py
+  * report.py
+
+## Run Locally
 pip install -r requirements.txt
 streamlit run app.py
 
+## How It Works
+Sensor Data - Sensor Validation - Trusted Readings - Safety Evaluation - Risk Prediction - Route Viability - Dashboard & Reports
 
-##Project Structure
-CryoGuard/
-├── app.py
-├── requirements.txt
-└── logic/
-    ├── thresholds.py
-    ├── voting.py
-    ├── state_engine.py
-    ├── prediction.py
-    └── report.py
-
-##Note
 CryoGuard is a hackathon prototype exploring predictive monitoring for medical cold-chain transportation.
-
-Monitor. Predict. Protect.
-
